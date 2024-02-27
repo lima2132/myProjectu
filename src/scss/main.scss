@@ -1,0 +1,10 @@
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/sticky-footer";
+
+
+@import "./blocks/**/*.scss";
+
+body{
+    color: #fff;
+}

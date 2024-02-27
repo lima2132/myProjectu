@@ -1,0 +1,106 @@
+.header-mobile {
+  display: none;
+}
+.button-mobile{
+  display: none;
+}
+@media (max-width: 1100px) {
+  .header-mobile {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+    background-color: #1b3764;
+    padding: 50px 50px 100px;
+    width: 400px;
+    &__close {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      background-color: #ffca42;
+      width: 20px;
+      height: 20px;
+      span {
+        display: block;
+        margin: 0 auto;
+        width: 16px;
+        height: 2px;
+        background-color: #1b3764;
+        &:nth-child(1) {
+          transform: translateY(0);
+        }
+        &:nth-child(2) {
+          transform: translateY(0);
+        }
+
+        &:nth-child(1) {
+          transform: translateY(1px) rotate(45deg);
+        }
+        &:nth-child(2) {
+          transform: translateX(0px) rotate(-45deg);
+        }
+      }
+    }
+    &__socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    &__items {
+      display: flex;
+      align-items: center;
+    }
+    &__logo {
+      width: 24px;
+      height: 28px;
+    }
+    &__logo-text {
+      margin-left: 9px;
+      font-family: "Inter", sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+    }
+    &__social-ul {
+      display: flex;
+      gap: 0 15px;
+    }
+    &__social-image_wrap {
+      width: 45px;
+      height: 45px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__nav {
+      margin-top: 50px;
+    }
+    &__nav-ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__nav-item {
+      text-align: center;
+    }
+
+    &__nav-link {
+      font-family: "Inter", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 700px){
+  .header-mobile{
+    width: 100%;
+    height: 100%;
+  }
+}
